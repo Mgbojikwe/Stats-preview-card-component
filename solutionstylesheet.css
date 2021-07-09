@@ -1,0 +1,97 @@
+/*For Mobile first*/
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(233, 47%, 7%);
+    margin: 0;
+    font-size: 100%; /*16px*/
+}
+.flex-container {
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin: 1.5rem;
+    border-radius: 0.65rem;
+    overflow: hidden;
+}
+.image1, .image2 {
+    max-width: 100%;
+    mix-blend-mode: multiply;
+    display: block;
+}
+.image2 {
+    display: none;
+}
+h2 {
+    color: hsl(0, 0%, 100%); 
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+}
+.stats {
+    color: hsl(0, 0%, 100%); 
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.4rem;
+    display: block;
+    line-height: 2rem;
+}
+.stats-heading {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+.flex-stats {
+    list-style-type: none;
+    padding: 0;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.flex-text {
+    text-align: center;
+}
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+.flex-picture {
+    background-color: hsl(277, 64%, 61%);    
+}
+
+/*
+.flex-picture {
+    width: 100%;
+}
+
+/*Designing for desktop*/
+@media only screen and (min-width:992px) {
+    .flex-container {
+            max-width: 1200px;
+            width: fit-content;
+            height: min-content;
+            margin: 10rem auto;
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .image1{
+        display: none;
+    }
+    .image2 {
+        display: block;  
+        height: 100%;
+        max-width: 100%;
+    }
+    .flex-text{
+        text-align: left;
+        max-width: 40%;
+        margin: auto;
+    }
+    .flex-stats {
+        display: flex;
+        justify-content: space-between;
+    }
+}
